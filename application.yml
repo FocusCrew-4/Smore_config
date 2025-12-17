@@ -1,1 +1,7 @@
-isok: ok
+management:
+  endpoints:
+    web:
+      discovery:
+        enabled: true
+      exposure:
+        include: "*"
