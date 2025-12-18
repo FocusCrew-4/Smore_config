@@ -5,10 +5,15 @@ management:
         enabled: true
       exposure:
         include: "*"
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
   tracing:
     sampling:
       probability: 1.0
   metrics:
     tags:
       application: ${spring.application.name}
+
 
