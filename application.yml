@@ -12,8 +12,16 @@ management:
   tracing:
     sampling:
       probability: 1.0
+    http:
+      server:
+        request:
+          ignore-patterns:
+            - /actuator/.*
+            - /health.*
+            - /metrics.*
   metrics:
     tags:
       application: ${spring.application.name}
+
 
 
